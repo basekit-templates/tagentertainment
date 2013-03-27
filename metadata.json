@@ -1,8 +1,7 @@
 {
 	"name":"Tag Enterainment",
-	"directory":"tagentertainment",
-	"thumbnail":"/tagentertainment/tagentertainment.jpg",
-	"screenshot":"/tagentertainment/tagentertainment.jpg",
+	"thumbnail":"tagentertainment.jpg",
+	"screenshot":"tagentertainment.jpg",
 	"pageTypes":[],
 	"defaultColorSwatch":"Professional 10",
 	"defaultFontSwatch":"Old Standard TT"
