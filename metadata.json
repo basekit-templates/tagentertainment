@@ -2,7 +2,7 @@
 	"name":"Tag Enterainment",
 	"thumbnail":"tagentertainment.jpg",
 	"screenshot":"tagentertainment.jpg",
-	"pageTypes":[],
+	"pageTypes":["about"],
 	"defaultColorSwatch":"Professional 10",
-	"defaultFontSwatch":"PT Sans Narrow"
+	"defaultFontSwatch":"Merriweather"
 }
