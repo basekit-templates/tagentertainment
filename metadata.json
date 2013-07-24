@@ -2,6 +2,8 @@
 	"name":"Tag Enterainment",
 	"thumbnail":"tagentertainment.png",
 	"screenshot":"tagentertainment.png",
+    "defaultColorSwatch":"Minimal 1",
+    "defaultFontSwatch":"Merriweather",
 	"pageTypes":["home"],
 	"colorSwatches":
     {
