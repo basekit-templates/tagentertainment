@@ -1,15 +1,12 @@
 {
-	"name":"Tag Enterainment",
-	"thumbnail":"tagentertainment.png",
-	"screenshot":"tagentertainment.png",
-    "defaultColorSwatch":"Minimal 1",
-    "defaultFontSwatch":"Merriweather",
-	"pageTypes":["home"],
-	"colorSwatches":
+    "name":"Tag Entertainment",
+    "thumbnail":"tagentertainment.png",
+    "screenshot":"tagentertainment.png",
+    "colorSwatches":
     {
         "Swatch 1": {
             "color1":"#ffffff",
-            "color2":"#23272a",
+            "color2":"#c90c10",
             "color3":"#c90c10",
             "color4":"#262626",
             "color5":"#c1c1c1",
@@ -17,40 +14,40 @@
             "color7":"#1c1f22"
         },
         "Swatch 2": {
-            "color1":"#ffffff",
-            "color2":"#72d0eb",
-            "color3":"#83c028",
-            "color4":"#2f353e",
-            "color5":"#b4bec7",
-            "color6":"#434f5b",
-            "color7":"#ffffff"
+            "color1":"#f8f5ec",
+            "color2":"#2d2727",
+            "color3":"#8fcb85",
+            "color4":"#5c5757",
+            "color5":"#aa9c8d",
+            "color6":"#545454",
+            "color7":"#f8f5eb"
         },
         "Swatch 3": {
-            "color1":"#ffffff",
-            "color2":"#72d0eb",
-            "color3":"#83c028",
-            "color4":"#2f353e",
-            "color5":"#b4bec7",
-            "color6":"#434f5b",
-            "color7":"#ffffff"
+            "color1":"#f8f5ec",
+            "color2":"#2d2727",
+            "color3":"#8fcb85",
+            "color4":"#5c5757",
+            "color5":"#aa9c8d",
+            "color6":"#545454",
+            "color7":"#f8f5eb"
         },
         "Swatch 4": {
-            "color1":"#ffffff",
-            "color2":"#72d0eb",
-            "color3":"#83c028",
-            "color4":"#2f353e",
-            "color5":"#b4bec7",
-            "color6":"#434f5b",
-            "color7":"#ffffff"
+            "color1":"#f8f5ec",
+            "color2":"#2d2727",
+            "color3":"#8fcb85",
+            "color4":"#5c5757",
+            "color5":"#aa9c8d",
+            "color6":"#545454",
+            "color7":"#f8f5eb"
         },
         "Swatch 5": {
-            "color1":"#ffffff",
-            "color2":"#72d0eb",
-            "color3":"#83c028",
-            "color4":"#2f353e",
-            "color5":"#b4bec7",
-            "color6":"#434f5b",
-            "color7":"#ffffff"
+            "color1":"#f8f5ec",
+            "color2":"#2d2727",
+            "color3":"#8fcb85",
+            "color4":"#5c5757",
+            "color5":"#aa9c8d",
+            "color6":"#545454",
+            "color7":"#f8f5eb"
         }
     },
     "fontSwatch": {
@@ -90,21 +87,21 @@
         "font5": {
             "font-family": "Merriweather",
             "font-size": "14px",
-            "font-weight": "inherit",
+            "font-weight": "500",
             "line-height": "28px",
             "color": "@color-swatch5",
             "letter-spacing": "inherit"
         },
         "font6": {
             "font-family": "Merriweather",
-            "font-size": "15px",
-            "font-weight": "inherit",
+            "font-size": "14px",
+            "font-weight": "500",
             "line-height": "28px",
             "color": "@color-swatch6",
-            "color-hover": "@color-swatch6",
+            "color-hover": "@color-swatch3",
             "letter-spacing": "inherit",
             "background-color": "@color-swatch2",
-            "background-color-hover": "@color-swatch2"
+            "background-color-hover": "darken(@color-swatch2,5%)"
         },
         "font7": {
             "font-family": "Merriweather",
@@ -112,14 +109,14 @@
             "font-weight": "inherit",
             "line-height": "28px",
             "color": "@color-swatch1",
-            "letter-spacing": "inherit",
+            "letter-spacing": "1px",
             "background-color": "@color-swatch3",
-            "background-color-hover": "@color-swatch3"
+            "background-color-hover": "darken(@color-swatch3,3%)"
         },
         "font8": {
             "font-family": "Merriweather",
-            "font-size": "37px",
-            "font-weight": "inherit",
+            "font-size": "38px",
+            "font-weight": "300",
             "line-height": "65px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit"
@@ -128,8 +125,16 @@
             "font-family": "Merriweather",
             "font-size": "15px",
             "font-weight": "inherit",
-            "line-height": "50px",
+            "line-height": "40px",
             "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "Merriweather",
+            "font-size": "16px",
+            "font-weight": "300",
+            "line-height": "36px",
+            "color": "@color-swatch6",
             "letter-spacing": "inherit"
         }
     }
