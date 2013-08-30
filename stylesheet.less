@@ -413,12 +413,12 @@ footer p {
 
 .widget.feature button {
     font-family: @font-swatch7-font-family;
-    font-size: 1.1em;
-    font-weight: @font-swatch7-font-weight;
+    font-weight:@font-swatch7-font-weight;
     line-height: @font-swatch7-line-height;
-    color: @font-swatch7-color;
     letter-spacing: @font-swatch7-letter-spacing;
     background-color: @font-swatch7-background-color;
+    color: @font-swatch7-color;
+    font-size: 1.1em;
     padding: 10px 16px;
     margin: 1em 0;
     border: none;
@@ -574,18 +574,21 @@ footer p {
     -moz-border-radius: 3px;
     border-radius: 3px;
     box-shadow: 0 4px darken(@color-swatch3,15%);
-    font-family: @font-swatch7-font-family;
-    font-size: @font-swatch7-font-size;
-    font-weight: @font-swatch7-font-weight;
-    background-color: @color-swatch3;
-    color: @color-swatch1;
     text-decoration: none;
     letter-spacing: 1px;
     text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+
+    font-family: @font-swatch7-font-family;
+    font-size: @font-swatch7-font-size;
+    font-weight:@font-swatch7-font-weight;
+    line-height: @font-swatch7-line-height;
+    letter-spacing: @font-swatch7-letter-spacing;
+    background-color: @font-swatch7-background-color;
+    color: @font-swatch7-color;
 }
 
 .widget.button button:hover {
-    background-color: darken(@color-swatch3,2%);
+    background-color: @font-swatch7-background-color;
     cursor: pointer;
 }
 
@@ -829,14 +832,16 @@ hr.line.align-right {
     -moz-border-radius: 3px;
     border-radius: 3px;
     box-shadow: 0 4px darken(@color-swatch3,15%);
-    font-family: @font-swatch2-font-family;
-    font-size: @font-swatch7-font-size;
-    font-weight: @font-swatch7-font-weight;
-    background-color: @color-swatch3;
-    color: @color-swatch1;
     text-decoration: none;
-    letter-spacing: 1px;
     text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+
+    font-family: @font-swatch7-font-family;
+    font-size: 14px;
+    font-weight:@font-swatch7-font-weight;
+    line-height: @font-swatch7-line-height;
+    letter-spacing: @font-swatch7-letter-spacing;
+    background-color: @font-swatch7-background-color;
+    color: @font-swatch7-color;
 }
 
 .widget.contactform fieldset button.btn:hover {
