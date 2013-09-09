@@ -2,6 +2,11 @@
     "name":"Tag Entertainment",
     "thumbnail":"tagentertainment.png",
     "screenshot":"tagentertainment.png",
+    "tags": {
+        "en": ["Professional", "clean", "Business", "modern"],
+        "es": ["Profesional", "limpio", "Corporativo", "moderno"],
+        "br": ["Profissional", "limpo", "Corporativo", "moderno"]
+    },
     "colorSwatches":
     {
         "Swatch 1": {
