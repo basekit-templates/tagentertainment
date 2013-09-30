@@ -3,9 +3,9 @@
     "thumbnail":"tagentertainment.png",
     "screenshot":"tagentertainment.png",
     "tags": {
-        "en": ["Professional", "clean", "Business", "modern"],
-        "es": ["Profesional", "limpio", "Corporativo", "moderno"],
-        "br": ["Profissional", "limpo", "Corporativo", "moderno"]
+        "en": ["Professional", "clean", "Business", "modern", "company", "business", "corporate", "finance", "financial", "firm", "money", "open", "simple"],
+        "es": ["Profesional", "limpio", "Corporativo", "moderno", "empresa", "negocios", "corporativo", "finanzas", "financiero", "firma", "dinero", "abierto", "simple"],
+        "br": ["Profissional", "limpo", "Corporativo", "moderno", "empresa", "negócios", "corporativo", "finanças", "financeiro", "firma", "dinheiro", "aberto", "simples"]
     },
     "colorSwatches":
     {
