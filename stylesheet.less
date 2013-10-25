@@ -1,3 +1,5 @@
+@import templatecommon('/paypal.less');
+
 body {
     background-color: @color-swatch1;
     margin: 0;
@@ -556,6 +558,21 @@ footer p {
     font-size: @font-swatch5-font-size;
     line-height: @font-swatch5-line-height;
 }
+
+/* ===============================
+   PAYPAL BUTTON
+   =============================== */
+
+
+.widget.paypalbuynow .widget.button.paypal {
+       -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0 4px darken(@color-swatch3,15%);
+       letter-spacing: 1px;
+    text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+}
+
 
 /* ===============================
    BUTTON CSS
