@@ -1,6 +1,5 @@
 @import "@{templateCommon}/basekit-bootstrap.less";
 
-
 body {
     background-color: @color-swatch1;
     margin: 0;
@@ -10,105 +9,6 @@ body {
 .wrapper {
     width: 90%;
     margin: 0 5%;
-}
-
-a {
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    font-weight: @font-swatch5-font-weight;
-    line-height: @font-swatch5-line-height;
-    color: @color-swatch3;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-    margin: 0;
-    padding: 0 0 10px;
-}
-
-h1 {
-    font-family: @font-swatch1-font-family;
-    font-weight: @font-swatch1-font-weight;
-    color: @font-swatch1-color;
-    line-height: @font-swatch1-line-height;
-    letter-spacing: @font-swatch1-letter-spacing;
-    font-size: @font-swatch1-font-size;
-}
-
-h2 {
-    font-family: @font-swatch2-font-family;
-    font-size: @font-swatch2-font-size;
-    font-weight: @font-swatch2-font-weight;
-    line-height: @font-swatch2-line-height;
-    color: @font-swatch2-color;
-    letter-spacing: @font-swatch2-letter-spacing;
-}
-
-h3 {
-    font-family: @font-swatch3-font-family;
-    font-size: @font-swatch3-font-size;
-    font-weight: @font-swatch3-font-weight;
-    color: @font-swatch3-color;
-    line-height: @font-swatch3-line-height;
-    letter-spacing: @font-swatch3-letter-spacing;
-}
-
-h4 {
-    font-family: @font-swatch4-font-family;
-    font-size: @font-swatch4-font-size;
-    font-weight: @font-swatch4-font-weight;
-    line-height: @font-swatch4-line-height;
-    color: @font-swatch4-color;
-    letter-spacing: @font-swatch4-letter-spacing;
-}
-
-p {
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    font-weight: @font-swatch5-font-weight;
-    line-height: @font-swatch5-line-height;
-    color: @font-swatch5-color;
-    letter-spacing: @font-swatch5-letter-spacing;
-}
-
-ul,
-ol,
-li {
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    font-weight: @font-swatch5-font-weight;
-    line-height: @font-swatch5-line-height;
-    color: @font-swatch5-color;
-    letter-spacing: @font-swatch5-letter-spacing;
-}
-
-blockquote {
-    margin: 30px 0;
-    quotes: "\201C""\201D""\2018""\2019";
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    font-weight: @font-swatch5-font-weight;
-    line-height: @font-swatch5-line-height;
-    color: darken(@font-swatch5-color,10%);
-}
-
-blockquote:before {
-    font-family: georgia;
-    color: @color-swatch2;
-    content: open-quote;
-    font-size: 4em;
-    line-height: .1em;
-    margin-right: .1em;
-    vertical-align: -.4em;
 }
 
 /* ===============================
@@ -125,7 +25,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 /* DEFAULT PAGE TYPE */
 
-.bk-pt-default header {
+.bk-pt-default header.bk-header {
     border-bottom: 1px solid@color-swatch2
 }
 
@@ -133,7 +33,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    HEADER
    =============================== */
 
-header {
+header.bk-header {
     padding: 16px 0;
     background-color: @color-swatch7;
 }
@@ -152,20 +52,6 @@ header {
     margin-top: 4px;
 }
 
-.widget.companyname a {
-    font-family: @font-swatch10-font-family;
-    font-weight: @font-swatch10-font-weight;
-    color: @font-swatch10-color;
-    line-height: @font-swatch10-line-height;
-    letter-spacing: @font-swatch10-letter-spacing;
-    font-size: @font-swatch10-font-size;
-}
-
-.widget.companyname a:hover {
-    cursor: pointer;
-    text-decoration: none;
-}
-
 /* LOGO */
 
 .widget.logo {
@@ -178,21 +64,21 @@ header {
    FOOTER
    =============================== */
 
-footer {
+footer.bk-footer {
     background-color: darken(@color-swatch3,3%);
     padding: 4em 0;
     color: @color-swatch1;
 }
 
-footer h1,
-footer h2,
-footer h3,
-footer h4 {
+footer.bk-footer h1,
+footer.bk-footer h2,
+footer.bk-footer h3,
+footer.bk-footer h4 {
     color: @color-swatch1;
     padding-bottom: 30px;
 }
 
-footer p {
+footer.bk-footer p {
     color: lighten(@color-swatch3,48%);
 }
 
@@ -278,11 +164,11 @@ footer p {
     display: none
 }
 
-.widget.extendednavigation li:hover > ul {
+.widget.extendednavigation ul li:hover > ul {
     display: block;
     position: absolute;
     width: 56%;
-    background-color: @color-swatch2;
+    background-color: @color-swatch3;
     z-index: 500;
     padding: 0;
     margin: 0;
@@ -400,31 +286,6 @@ footer p {
 }
 
 /* ===============================
-   FEATURE LAYOUTS
-   =============================== */
-
-/* LEFT ALIGN */
-
-.widget.feature.align-left .content {
-    width: 100%;
-    text-align: left;
-}
-
-/* CENTER ALIGN */
-
-.widget.feature.align-center .content {
-    width: 100%;
-    text-align: center;
-}
-
-/* RIGHT ALIGN */
-
-.widget.feature.align-right .content {
-    width: 100%;
-    text-align: right;
-}
-
-/* ===============================
    CONTENT
    =============================== */
 
@@ -454,41 +315,6 @@ footer p {
 }
 
 /* ===============================
-   IMAGE WIDGET
-   =============================== */
-
-.widget.image img {
-    display: block;
-    max-width: 100%;
-    border: 0;
-    border-width: 0;
-}
-
-.widget.image {
-
-}
-
-.widget.image span.image-title {
-    display: block;
-    margin: 5px;
-    font-family: @font-swatch4-font-family;
-    font-weight: @font-swatch4-font-weight;
-    font-size: @font-swatch4-font-size;
-    text-align: center;
-    line-height: @font-swatch4-line-height;
-}
-
-.widget.image span.image-description {
-    display: block;
-    margin: 5px;
-    text-align: center;
-    font-family: @font-swatch5-font-family;
-    font-weight: @font-swatch5-font-weight;
-    font-size: @font-swatch5-font-size;
-    line-height: @font-swatch5-line-height;
-}
-
-/* ===============================
    BUTTON CSS
    =============================== */
 
@@ -515,7 +341,7 @@ footer p {
 }
 
 hr.line {
-    background-color: lighten(@color-swatch5,15%);
+    background-color: lighten(@color-swatch5,35%);
     height: 1px;
     width: 100%;
     border: none;
@@ -532,6 +358,7 @@ hr.line.align-center {
 hr.line.align-right {
     margin: 20px 0px 20px auto
 }
+
 
 /* =======================================
    CLICK TO CALL
@@ -760,35 +587,6 @@ hr.line.align-right {
 }
 
 /* ===============================
-   REDIRECT WIDGET
-   =============================== */
-
-.widget.redirecttodesktop {
-    padding: 8px 0
-}
-
-.widget.redirecttodesktop a {
-    padding-right: 30px;
-    padding-top: 2px;
-    background-image: image('/images/desktop.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    font-size: 12px;
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.widget.redirecttodesktop a:hover,
-.desktop a:active {
-    background-image: image('/images/desktop.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-/* ===============================
    TWEET THIS
    =============================== */
 
@@ -802,6 +600,7 @@ hr.line.align-right {
     border-radius: 3px;
     text-shadow: 0 1px 0px rgba(0,0,0,0.2);
     box-shadow: 0 4px darken(@color-swatch3,15%);
+    -webkit-font-smoothing: initial;
 }
 
 /* ===============================
@@ -1087,7 +886,7 @@ hr.line.align-right {
   padding: 0 0 20px;
 }
 
-footer .footer2 .widget.profile form {
+footer.bk-footer .footer2 .widget.profile form {
   padding: 0 0 8px;
 }
 
@@ -1225,68 +1024,178 @@ footer .footer2 .widget.profile form {
    SLIDESHOW WIDGET
    =============================== */
 
-.widget.responsiveslideshow .slideshow-image-list {
-    height: 450px;
-}
-
-.widget.responsiveslideshow .title {
-    display: block;
-}
-
-.responsiveslideshow .content-wrapper {
-    background: rgba(0,0,0,0.5);
-}
-
-.widget.responsiveslideshow .slideshow-widget .btn-prev, 
-.widget.responsiveslideshow .slideshow-widget .btn-next {
-    font-size: 0;
-    z-index: 11;
-    text-indent: -99999px;
-}
-
-.widget.responsiveslideshow .slideshow-widget .btn-prev {
-    background: rgba(0,0,0,0.5);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    &:after {
-        content: "\2190";
-        color: #fff;
-        top: 7px;
+.widget.responsiveslideshow {
+    .slideshow-image-list,
+    .slideshow-widget {
+        min-height: 450px;
+        @media @tablet {
+            min-height: 350px;
+        }
+        @media @mobile {
+            min-height: 280px;
+            height: 280px;
+        }
+    }
+    .title {
+        display: block;
+    }
+    .content-wrapper {
+        background: rgba(0,0,0,0.5);
+    }
+    .slideshow-widget {
+        /* Arrows */
+        .btn-prev,
+        .btn-next {
+            font-size: 0;
+            z-index: 11;
+            text-indent: -99999px;
+            width: 40px;
+            height: 40px;
+            background: rgba(0,0,0,0.5);
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+        .btn-prev {
+            &:after {
+                content: "\2190";
+                color: #fff;
+                top: 7px;
+            }
+        }
+        .btn-next {
+            &:after {
+                content: "\2192";
+                color: #fff;
+                top: 7px;
+            }
+        }
+        /* Play Button */
+        .btn-play {
+            background: rgba(0,0,0,0.5);
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            &:after {
+                color: #fff;
+                letter-spacing: -4px;
+                top: 2px;
+            }
+        }
+    }
+    /* Slideshow Controls */
+    .slideshow-widget-controls {
+        .dot {
+            width: 11px;
+            height: 11px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            &.selected {
+                background-color: @color-swatch5;
+            }
+        }
     }
 }
 
-.widget.responsiveslideshow .slideshow-widget .btn-next {
-    background: rgba(0,0,0,0.5);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    &:after {
-        content: "\2192";
-        color: #fff;
-        top: 7px;
+
+/* ===============================
+   BLOG
+   =============================== */
+
+.widget {
+    &.bloglistposts {
+        .blog-post-item {
+            padding: 30px;
+            background-color: lighten(@color-swatch5,45%);
+            border: 1px solid lighten(@color-swatch5,40%);
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px; 
+            border-radius: 4px;
+            // border-bottom: 1px solid lighten(@color-swatch5,40%);
+        }
+        img {
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px; 
+            border-radius: 4px;
+            margin-bottom: .4em;
+        }
     }
 }
 
-.widget.responsiveslideshow .slideshow-widget-controls {
-    margin-top: 10px;
+.blog-post-item {
+    margin: 1.5em 0;
+    padding-bottom: 1em;
+    h2 {
+        a {
+            font-family: @font-swatch2-font-family;
+            font-size: @font-swatch2-font-size;
+            font-weight: @font-swatch2-font-weight;
+            line-height: @font-swatch2-line-height;
+            color: @font-swatch2-color;
+            letter-spacing: @font-swatch2-letter-spacing;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
 
-.widget.responsiveslideshow .slideshow-widget-controls .dot {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+.blog-post-metadata {
+    background-color: transparent;
+    background-image: none;
+    margin-top: 0;
+    text-align: left;
 }
 
-.widget.responsiveslideshow .slideshow-widget .btn-play {
-    background: rgba(0,0,0,0.5);
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    &:after {
-        color: #fff;
-        letter-spacing: -4px;
-        top: 2px;
+.blog-list-footer {
+    background-color: transparent;
+    background-image: none;
+}
+
+.blog-post-more-link {
+    float: left;
+    width: 100%;
+}
+
+/* BLOG SEARCH */
+.blogsearch {
+    form {
+        label {
+            margin-bottom: .6em;
+        }
+        input {
+            height: 50px;
+            background-color: lighten(@color-swatch5,45%);
+            border: 1px solid lighten(@color-swatch5,35%);
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            margin: .6em 0;
+        }
+        button {
+            background-color: @font-swatch7-background-color;
+            font-family: @font-swatch7-font-family;
+            font-size: @font-swatch7-font-size;
+            font-weight: @font-swatch7-font-weight;
+            line-height: @font-swatch7-line-height;
+            color: @font-swatch7-color;
+            letter-spacing: @font-swatch7-letter-spacing;
+            padding: 8px 16px;
+            margin: 0;
+            border: none;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            box-shadow: 0 4px darken(@color-swatch3,15%);
+            text-decoration: none;
+            text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+            &:hover {
+                background-color: @font-swatch7-background-color-hover;
+                cursor: pointer;
+            }
+        }
     }
 }
 
@@ -1339,12 +1248,6 @@ footer .footer2 .widget.profile form {
         line-height:bkscale(@font-swatch5-line-height,0.9);
     }
 
-    /* SLIDESHOW */
-
-    .widget.responsiveslideshow .slideshow-image-list, 
-    .widget.responsiveslideshow .slideshow-widget {
-        height: 350px;
-    }
 }
 
 /* ===============================
@@ -1426,14 +1329,7 @@ footer .footer2 .widget.profile form {
         cursor: pointer;
     }
 
-     /* SLIDESHOW */
-
-    .widget.responsiveslideshow .slideshow-image-list, 
-    .widget.responsiveslideshow .slideshow-widget {
-        height: 280px;
-    }
-
-     /* GALLERY */
+    /* GALLERY */
 
     .widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
     max-height: 150px;
