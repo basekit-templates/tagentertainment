@@ -147,7 +147,7 @@ footer.bk-footer p {
 }
 
 .widget.extendednavigation ul li.folder:hover {
-    background-color: @font-swatch6-background-color
+    background-color: @color-swatch3;
 }
 
 .widget.extendednavigation ul li.folder .text:hover {
@@ -853,13 +853,17 @@ hr.line.align-right {
     display: block;
     font-size: @font-swatch5-font-size;
     font-family: @font-swatch5-font-family;
-    color: lighten(@color-swatch3,48%);
+    color: @font-swatch5-color;
     line-height: @font-swatch5-line-height;
     font-weight: @font-swatch5-font-weight;
 }
 
+.widget.profile a {
+    color: @color-swatch3;
+}
+
 .widget.profile a:hover {
-    color: lighten(@color-swatch3,40%);
+    color: lighten(@color-swatch3,15%);
     text-decoration: none;
 }
 
@@ -1055,12 +1059,19 @@ footer.bk-footer .footer2 .widget.profile form {
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;
             border-radius: 50%;
+            @media @tablet {
+                width: 30px;
+                height: 30px;
+            }
         }
         .btn-prev {
             &:after {
                 content: "\2190";
                 color: #fff;
                 top: 7px;
+                @media @tablet {
+                    top: 1px!important;
+                }
             }
         }
         .btn-next {
@@ -1068,10 +1079,16 @@ footer.bk-footer .footer2 .widget.profile form {
                 content: "\2192";
                 color: #fff;
                 top: 7px;
+                @media @tablet {
+                    top: 1px!important;
+                }
             }
         }
         /* Play Button */
         .btn-play {
+            top: 40%;
+            width: 50px;
+            height: 50px;
             background: rgba(0,0,0,0.5);
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
@@ -1080,6 +1097,19 @@ footer.bk-footer .footer2 .widget.profile form {
                 color: #fff;
                 letter-spacing: -4px;
                 top: 2px;
+                line-height: 51px;
+            }
+            @media @tablet {
+                top: 43%;
+                width: 40px;
+                height: 40px;
+                &:after {
+                    line-height: 38px;
+                    font-size: 26px;
+                }
+            }
+            @media @mobile {
+                top: 41%;
             }
         }
     }
@@ -1092,7 +1122,9 @@ footer.bk-footer .footer2 .widget.profile form {
             -moz-border-radius: 50%;
             border-radius: 50%;
             &.selected {
-                background-color: @color-swatch5;
+                background-color: @color-swatch3;
+                width: 11px;
+                height: 11px;
             }
         }
     }
@@ -1112,13 +1144,17 @@ footer.bk-footer .footer2 .widget.profile form {
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px; 
             border-radius: 4px;
-            // border-bottom: 1px solid lighten(@color-swatch5,40%);
         }
-        img {
-            -webkit-border-radius: 4px;
-            -moz-border-radius: 4px; 
-            border-radius: 4px;
-            margin-bottom: .4em;
+        .blog-post-feature-image-wrap {  /* Blog post feature image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 250px;
+            width: 250px;
+            margin-bottom: 20px;
+            img {
+                display: none;
+            }
         }
     }
 }
@@ -1163,18 +1199,29 @@ footer.bk-footer .footer2 .widget.profile form {
 .blogsearch {
     form {
         label {
+            display: block;
             margin-bottom: .6em;
+            font-family: @font-swatch4-font-family;
+            font-size: @font-swatch4-font-size;
+            font-weight: @font-swatch4-font-weight;
+            line-height: @font-swatch4-line-height;
+            color: @font-swatch4-color;
+            letter-spacing: @font-swatch4-letter-spacing;
         }
         input {
-            height: 50px;
+            width: 60%;
+            height: 52px;
+            margin-bottom: 10px;
             background-color: lighten(@color-swatch5,45%);
             border: 1px solid lighten(@color-swatch5,35%);
-            -webkit-border-radius: 4px;
-            -moz-border-radius: 4px;
-            border-radius: 4px;
-            margin: .6em 0;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            padding-left: 10px;
         }
         button {
+            position: relative;
+            top: -2px;
             background-color: @font-swatch7-background-color;
             font-family: @font-swatch7-font-family;
             font-size: @font-swatch7-font-size;
@@ -1182,7 +1229,7 @@ footer.bk-footer .footer2 .widget.profile form {
             line-height: @font-swatch7-line-height;
             color: @font-swatch7-color;
             letter-spacing: @font-swatch7-letter-spacing;
-            padding: 8px 16px;
+            padding: 10px 16px;
             margin: 0;
             border: none;
             -webkit-border-radius: 3px;
@@ -1198,6 +1245,45 @@ footer.bk-footer .footer2 .widget.profile form {
         }
     }
 }
+
+/* ===============================
+   MENU
+   =============================== */
+
+.menu {
+    .menu-item-image-wrap {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 180px;
+        margin: 0.25em 0 0.75em;
+        background-position: center;
+        @media @mobile {
+           margin: 1em 0 0.5em;
+        }
+        img {
+           display: none;
+        }
+    }
+    .menu-items {
+        .menu-item {
+            padding: 30px;
+            background-color: lighten(@color-swatch5,45%);
+            border: 1px solid lighten(@color-swatch5,40%);
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px; 
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+    }
+    .menu-subsection {
+        padding: 30px;
+        border: 1px solid lighten(@color-swatch5,40%);
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px; 
+        border-radius: 4px;
+    }
+}
+
 
 /* ===============================
    IPAD WIDTH
