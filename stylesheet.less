@@ -562,30 +562,6 @@ hr.line.align-right {
     cursor: pointer;
 }
 
-.widget.contactform fieldset button.btn.justifyleft {
-    text-align: left
-}
-
-.widget.contactform fieldset button.btn.justifycenter {
-    text-align: center
-}
-
-.widget.contactform fieldset button.btn.justifyright {
-    text-align: right
-}
-
-.widget.contactform fieldset button.btn.justifyfull {
-    text-align: justify
-}
-
-.widget.contactform fieldset button.btn.italic {
-    font-style: italic
-}
-
-.widget.contactform fieldset button.btn.bold {
-    font-weight: bold
-}
-
 /* ===============================
    TWEET THIS
    =============================== */
@@ -600,7 +576,6 @@ hr.line.align-right {
     border-radius: 3px;
     text-shadow: 0 1px 0px rgba(0,0,0,0.2);
     box-shadow: 0 4px darken(@color-swatch3,15%);
-    -webkit-font-smoothing: initial;
 }
 
 /* ===============================
@@ -853,7 +828,7 @@ hr.line.align-right {
     display: block;
     font-size: @font-swatch5-font-size;
     font-family: @font-swatch5-font-family;
-    color: @font-swatch5-color;
+    color: @color-swatch1;
     line-height: @font-swatch5-line-height;
     font-weight: @font-swatch5-font-weight;
 }
@@ -1290,6 +1265,7 @@ footer.bk-footer .footer2 .widget.profile form {
    =============================== */
 
 @media only screen and (max-width: 768px) { 
+
     /* NAV */
 
     .widget .extendednavigation a.pull:after {
@@ -1435,18 +1411,4 @@ footer.bk-footer .footer2 .widget.profile form {
         /* 1140px - 10% for margins */
         margin: 0 auto;
     }
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both
-}
-
-.clearfix {
-    *zoom: 1
 }
