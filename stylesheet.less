@@ -52,9 +52,9 @@ header.bk-header {
 /* COMPANY NAME */
 
 .widget.companyname {
-    display: block;
-    float: left;
+    display: inline-block;
     margin-top: 4px;
+    vertical-align: middle;
 
     a {
         line-height: @font-swatch4-line-height;
@@ -67,9 +67,9 @@ header.bk-header {
 /* LOGO */
 
 .widget.logo {
-    display: block;
-    float: left;
+    display: inline-block;
     margin-right: 10px;
+    vertical-align: middle;
 }
 
 
@@ -115,9 +115,9 @@ footer.bk-footer p {
         top: 0;
         margin: 60px 0 0;
     }
-    a.pull {
-        top: 10px;
-    }
+/*    a.pull {
+        top: -43px;
+    }*/
 }
 
 .widget.extendednavigation ul {
@@ -1296,57 +1296,6 @@ footer.bk-footer .footer2 .widget.profile form {
     }
 }
 
-
-/* ===============================
-   IPAD WIDTH
-   =============================== */
-
-@media @tablet { 
-
-    /* NAV */
-
-    .widget.extendednavigation a.pull {
-        top: -36px;
-    }
-
-    .widget.extendednavigation {
-        width: 100%;
-        padding: 0;
- /*       margin: 0;*/
-    }
-
-    /* NAV */
-
-    .widget .extendednavigation ul {
-        width: 100%;
-        display: none;
-        border-top: 1px solid lighten(@color-swatch7,8%);
-        padding: 20px 0;
-        margin: 14px 0 0;
-    }
-
-    .widget .extendednavigation ul li {
-        width: 100%;
-        padding: 0;
-        border-bottom: 0;
-    }
-
-    .widget.extendednavigation ul li:hover > ul {
-        display: block!important;
-        width: 100%;
-        border-top: 1px solid darken(@color-swatch3,15%);
-        margin: 0;
-    }
-
-    /* GALLERY */
-
-    .widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
-        font-size:bkscale(@font-swatch5-font-size,0.9);
-        line-height:bkscale(@font-swatch5-line-height,0.9);
-    }
-
-}
-
 /* =======================================
    ECOMMERCE
    ==================================== */
@@ -1546,6 +1495,59 @@ footer.bk-footer .footer2 .widget.profile form {
     text-decoration: none;
     text-shadow: 0 1px 0px rgba(0,0,0,0.2);
 }
+
+
+
+/* ===============================
+   IPAD WIDTH
+   =============================== */
+
+@media @tablet { 
+
+    /* NAV */
+
+/*    .widget.extendednavigation a.pull {
+        top: 0;
+    }*/
+
+    .widget.extendednavigation {
+        width: 100%;
+        padding: 0;
+ /*       margin: 0;*/
+    }
+
+    /* NAV */
+
+    .widget .extendednavigation ul {
+        width: 100%;
+        display: none;
+        border-top: 1px solid lighten(@color-swatch7,8%);
+        padding: 20px 0;
+        margin: 14px 0 0;
+    }
+
+    .widget .extendednavigation ul li {
+        width: 100%;
+        padding: 0;
+        border-bottom: 0;
+    }
+
+    .widget.extendednavigation ul li:hover > ul {
+        display: block!important;
+        width: 100%;
+        border-top: 1px solid darken(@color-swatch3,15%);
+        margin: 0;
+    }
+
+    /* GALLERY */
+
+    .widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
+        font-size:bkscale(@font-swatch5-font-size,0.9);
+        line-height:bkscale(@font-swatch5-line-height,0.9);
+    }
+
+}
+
 
 
 
