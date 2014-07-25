@@ -43,6 +43,10 @@ header.bk-header {
     float: left;
     width: 25%;
     padding: 11px 0 0;
+
+    @media @tablet {
+        width: 90%;
+    }
 }
 
 /* COMPANY NAME */
@@ -51,6 +55,13 @@ header.bk-header {
     display: block;
     float: left;
     margin-top: 4px;
+
+    a {
+        line-height: @font-swatch4-line-height;
+        @media @mobile {
+            font-size: @font-swatch9-font-size;
+        }
+    }
 }
 
 /* LOGO */
@@ -99,26 +110,15 @@ footer.bk-footer p {
     padding: 0;
 }
 
-/* ALIGNMENTS */
-
-.widget.extendednavigation ul.align-center li,
-.widget.extendednavigation ul.align-center li:hover ul li {
-    text-align: center
-}
-
-.widget.extendednavigation ul.align-left li,
-.widget.extendednavigation ul.align-left li:hover ul li {
-    text-align: left
-}
-
-.widget.extendednavigation ul.align-right li,
-.widget.extendednavigation ul.align-right li:hover ul li {
-    text-align: right
-}
-
 .widget.extendednavigation ul li {
     float: left;
     display: block;
+}
+
+.extendednavigation li.selected {
+    a, .text {
+        color: @font-swatch6-color-hover;
+    }
 }
 
 .widget.extendednavigation ul li a,
@@ -202,6 +202,9 @@ footer.bk-footer p {
 .widget.feature .content {
     height: 450px;
     text-align: left;
+    @media @tablet {
+        padding: 20px 0 40px 0;
+    }
 }
 
 /* FEATURE TITLE */
@@ -330,6 +333,10 @@ footer.bk-footer p {
     border-radius: 3px;
     text-shadow: 0 1px 0px rgba(0,0,0,0.2);
     box-shadow: 0 4px darken(@color-swatch3,15%);
+
+    &:hover {
+        background-color: @font-swatch7-background-color-hover;
+    }
 }
 
 /* ===============================
@@ -424,7 +431,7 @@ hr.line.align-right {
 }
 
 .widget.twitter a {
-    color: @font-swatch5-color;
+    color: @font-swatch6-color-hover;
     font-family: @font-swatch5-font-family;
     text-decoration: none;
 }
@@ -437,6 +444,20 @@ hr.line.align-right {
 .widget.twitter ul {
     padding: 0px;
     margin: 0;
+
+    p {
+        font-size: @font-swatch4-font-size;
+    }
+
+    time {
+        font-size: @font-swatch5-font-size;
+    }
+}
+
+.widget.twitter ul a {
+/*    color: @font-swatch2-color;*/
+    font-family: @font-swatch5-font-family;
+    text-decoration: none;
 }
 
 .widget.twitter ul li {
@@ -896,7 +917,7 @@ footer.bk-footer .footer2 .widget.profile form {
   font-size: @font-swatch5-font-size;
   font-weight: 300;
   line-height: @font-swatch5-line-height;
-  color: @font-swatch5-color;
+  color: @font-swatch7-color;
   letter-spacing: @font-swatch5-letter-spacing;
   text-indent: 16px;
   -webkit-border-radius: 3px;
@@ -982,7 +1003,7 @@ footer.bk-footer .footer2 .widget.profile form {
 
 .widget.signupform button {
     padding: 12px 16px;
-    margin: 0;
+    margin: 0 0 0 10px;
     position: relative;
     top: -2px;
     border: none;
@@ -1120,19 +1141,20 @@ footer.bk-footer .footer2 .widget.profile form {
             -moz-border-radius: 4px; 
             border-radius: 4px;
         }
-        .blog-post-feature-image-wrap {  /* Blog post feature image */
+    }
+}
+
+.blog-post-feature-image-wrap {  /* Blog post feature image */
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             height: 250px;
-            width: 250px;
+            max-width: 100%;
             margin-bottom: 20px;
             img {
                 display: none;
             }
         }
-    }
-}
 
 .blog-post-item {
     margin: 1.5em 0;
@@ -1205,7 +1227,7 @@ footer.bk-footer .footer2 .widget.profile form {
             color: @font-swatch7-color;
             letter-spacing: @font-swatch7-letter-spacing;
             padding: 10px 16px;
-            margin: 0;
+            margin: 0 0 0 10px;
             border: none;
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
@@ -1309,6 +1331,210 @@ footer.bk-footer .footer2 .widget.profile form {
     }
 
 }
+
+/* =======================================
+   ECOMMERCE
+   ==================================== */
+
+   .widget.ecomproduct .ecom-product .ecom-product-preview-image-wrap {
+        background-position: 0 3000%;
+   }
+
+   .ecom-product-variation select,
+   .widget.ecomcheckout .delivery select {
+
+        -moz-appearance: none;
+        text-indent: 0.01px;
+        text-overflow: '';
+        cursor: pointer;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: right center;
+        margin: 0;
+        color: @color-swatch5;
+        position: relative;
+        display: inline-block;
+        font-family: @font-swatch7-font-family;
+        font-size: @font-swatch7-font-size;
+        font-weight: @font-swatch7-font-weight;
+        line-height: 1;
+        border-radius: 0;
+        webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 1px solid @color-swatch5;
+        background-color: @color-swatch1;
+        padding: 8px 38px 8px 14px;
+        text-indent: 0;
+        letter-spacing: 0;
+        float: none;
+        height: 41px;
+        background-image: image('/images/ui-select-arrow.png');
+
+        @media @mobile {
+          display: block;
+          width: 100%;
+        }
+    }
+
+   .widget.ecomproductslist {
+  .ecom-productslist-products {
+    // Filter
+    .productlist-filter {
+      .productlist-display-form {
+        .clearfix;
+        margin-bottom: 1em;
+        text-align: center;
+        .form-group {
+          margin-right: 0.5em;
+          margin-left: 0.5em;
+          display: inline-block;
+          vertical-align: center;
+          @media @mobile {
+            display: block;
+            margin-bottom: 10px;
+          }
+          label {
+            display: block;
+            font-size: bkscale(@font-swatch5-font-size, 0.8);
+            text-align: center;
+            @media @mobile {
+              text-align: left;
+            }
+          }
+          select {
+            -moz-appearance: none;
+            text-indent: 0.01px;
+            -webkit-appearance: none;
+            text-overflow: '';
+            cursor: pointer;
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: right center;
+            margin: 0;
+            color: @color-swatch5;
+            position: relative;
+            display: inline-block;
+            font-family: @font-swatch7-font-family;
+            font-size: @font-swatch7-font-size;
+            font-weight: @font-swatch7-font-weight;
+            line-height: 1;
+            border-radius: 0;
+            webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 1px solid @color-swatch5;
+            background-color: @color-swatch1;
+            padding: 8px 38px 8px 14px;
+            text-indent: 0;
+            letter-spacing: 0;
+            float: none;
+            height: 41px;
+            background-image: image('/images/ui-select-arrow.png');
+
+            @media @mobile {
+              display: block;
+              width: 100%;
+            }
+          }
+
+          button {
+            font-family: @font-swatch7-font-family;
+            font-weight:@font-swatch7-font-weight;
+            line-height: @font-swatch7-line-height;
+            letter-spacing: @font-swatch7-letter-spacing;
+            background-color: @font-swatch7-background-color;
+            color: @font-swatch7-color;
+            font-size: 1.1em;
+            padding: 6px 16px 2px 16px;
+            margin: 1em 0;
+            border: none;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            box-shadow: 0 4px darken(@color-swatch3,15%);
+            text-decoration: none;
+            text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+          }
+
+        }
+      }
+      .productlist-item-count {
+        text-align: center;
+        clear: both;
+      }
+    }
+  }
+}
+
+.svg {
+  .widget.ecomproductslist .ecom-productslist-products .productlist-filter .productlist-display-form .form-group select {
+    background-image: image('/images/ui-select-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: 93%;
+    background-position-y: 55%;
+  }
+}
+
+    /*  Basket Icon  */
+
+    .widget.ecombasket {
+        margin-bottom: 2em;
+    }
+
+    /*  Order Button  */
+
+    .widget.ecomcheckout {
+
+        .checkout-order-button {
+            margin: 20px 0 20px 0;
+            font-family: @font-swatch7-font-family;
+            font-weight:@font-swatch7-font-weight;
+            line-height: @font-swatch7-line-height;
+            letter-spacing: @font-swatch7-letter-spacing;
+            background-color: @font-swatch7-background-color;
+            color: @font-swatch7-color;
+            font-size: 1.1em;
+            padding: 10px 16px;
+            margin: 1em 0;
+            border: none;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            box-shadow: 0 4px darken(@color-swatch3,15%);
+            text-decoration: none;
+            text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+        }
+
+        .delivery-price {
+            line-height: 50px;
+        }
+
+}
+
+.widget.ecomproduct .ecom-product .btn {
+    font-family: @font-swatch7-font-family;
+    font-weight:@font-swatch7-font-weight;
+    line-height: @font-swatch7-line-height;
+    letter-spacing: @font-swatch7-letter-spacing;
+    background-color: @font-swatch7-background-color;
+    color: @font-swatch7-color;
+    font-size: 1.1em;
+    padding: 10px 16px;
+    margin: 1em 0;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0 4px darken(@color-swatch3,15%);
+    text-decoration: none;
+    text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+}
+
+
+
+
 
 /* ===============================
    IPHONE WIDTH
