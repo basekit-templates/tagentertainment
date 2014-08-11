@@ -1,7 +1,12 @@
 tagentertainment
 ================
 
-BaseKi's Tag Entertainment Template
+BaseKit's Tag Entertainment Template
+
+Changes - 2013-05-22
++ Onto Develop Branch
++ Template review fixes
++ Basekt summary style updates
 
 Changes - 2013-05-22
 + Onto Develop Branch
