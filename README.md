@@ -3,10 +3,10 @@ tagentertainment
 
 BaseKit's Tag Entertainment Template
 
-Changes - 2013-05-22
+Changes - 2014-08-11
 + Onto Develop Branch
 + Template review fixes
-+ Basekt summary style updates
++ Baseket summary style updates
 
 Changes - 2013-05-22
 + Onto Develop Branch
