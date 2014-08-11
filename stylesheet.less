@@ -1460,7 +1460,7 @@ footer.bk-footer .footer2 .widget.profile form {
 .widget.ecombasketsummary {
     // Title
     .basket-summary-title {
-        border-bottom: 2px solid @color-swatch2;
+        border-bottom: 2px solid darken(@color-swatch1,10%);
     }
 
     // Empty basket
@@ -1501,9 +1501,9 @@ footer.bk-footer .footer2 .widget.profile form {
                 display: none;
             }
             th {
-                border-bottom: 1px solid @color-swatch2;
+                border-bottom: 1px solid darken(@color-swatch1,10%);
                 &:nth-child(2) {
-                    border-right: 0px solid @color-swatch2;
+                    border-right: 0px darken(@color-swatch1,10%);
                 }
 
             }
@@ -1512,14 +1512,14 @@ footer.bk-footer .footer2 .widget.profile form {
         tr.basket-summary-items {
             @media @mobile {
                 position: relative;
-                border-top: 1px solid @color-swatch2;
+                border-top: 1px darken(@color-swatch1,10%);
                 padding: 0 0 10px 0;
                 margin: 0 0 10px 0;
 
             }
 
             td {
-                border-bottom: 1px solid @color-swatch2;
+                border-bottom: 1px darken(@color-swatch1,10%);
                 @media @mobile {
                     border-bottom: none;
                 }
@@ -1557,14 +1557,15 @@ footer.bk-footer .footer2 .widget.profile form {
                 padding-right: 170px;
                 vertical-align: top;
                 position: relative;
-/*                border-right: 1px solid @color-swatch2;*/
                 @media @tablet{
                     padding-right: 0;
+                    float: left;
                 }
                 @media @mobile {
                     width: auto;
                     padding-left: 0;
                     border-right: none;
+                    float: none;
                 }
                 // Name
                 .basket-summary-productname {
@@ -1587,7 +1588,7 @@ footer.bk-footer .footer2 .widget.profile form {
                     position: absolute;
                     right: 20px;
                     display: block;
-                    top: 20px;
+                    top: 0px;
                     height: 20px;
                     line-height: 30px;
                     text-align: center;
@@ -1599,6 +1600,7 @@ footer.bk-footer .footer2 .widget.profile form {
                     }
                     @media @mobile {
                         width: 130px;
+                        height: 50px;
                     }
                 }
                 // Quantity button
@@ -1607,17 +1609,17 @@ footer.bk-footer .footer2 .widget.profile form {
                     margin: 0;
                     position: absolute;
                     width: 150px;
-                    right: 20px;
-                    top: 50px;
                     height: 40px;
                     @media @tablet {
                         position: relative;
                         right: 0;
                         top: 0;
+                        float: right;
                     }
                     @media @mobile {
                         height: 30px;
                         width: 130px;
+                        float: none;
                     }
                     button {
                         font-family: @font-swatch5-font-family;
@@ -1628,7 +1630,7 @@ footer.bk-footer .footer2 .widget.profile form {
                         cursor: pointer;
                         padding: 0;
                         color: @color-swatch1;
-                        background-color: @color-swatch2;
+                        background-color: @color-swatch3;
                         position: absolute;
                         top: 0;
                         width: 40px;
@@ -1642,7 +1644,7 @@ footer.bk-footer .footer2 .widget.profile form {
                         }
 
                         &:hover {
-                            background-color: darken(@color-swatch2, 10%);
+                            background-color: darken(@color-swatch3, 10%);
                         }
 
                         &.js-remove {
@@ -1680,7 +1682,7 @@ footer.bk-footer .footer2 .widget.profile form {
                     text-align: left;
                     position: absolute;
                     right: 0;
-                    bottom: 20px;
+                    bottom: 10px;
                 }
             }
         }
@@ -1689,8 +1691,8 @@ footer.bk-footer .footer2 .widget.profile form {
         tbody tr:last-child {
             td {
                 font-size: @font-swatch4-font-size;
-                border-top: 1px solid @color-swatch2;
-                border-bottom: 2px solid @color-swatch2;
+                border-top: 1px solid darken(@color-swatch1,10%);
+                border-bottom: 2px solid darken(@color-swatch1,10%);
                 @media @mobile {
                     text-align: left;
                     border-top: 0;
@@ -1700,8 +1702,8 @@ footer.bk-footer .footer2 .widget.profile form {
                 &.basket-summary-subtotal {
                     text-align: right;
                     @media @mobile {
-                        border-top: 2px solid @color-swatch2;
-                        border-bottom: 2px solid @color-swatch2;
+                        border-top: 2px solid darken(@color-swatch1,10%);
+                        border-bottom: 2px solid darken(@color-swatch1,10%);
                     }
                 }
             }
