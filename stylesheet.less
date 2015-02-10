@@ -131,6 +131,9 @@ footer.bk-footer p {
 .widget.extendednavigation ul li {
     float: left;
     display: block;
+    &:last-child a {
+        padding-right: 0;
+    }
 }
 
 .extendednavigation li.selected {
@@ -825,6 +828,22 @@ footer.bk-footer .footer2 .widget.profile form {
    -moz-border-radius: 3px;
         border-radius: 3px;
   padding:0;
+
+    &::-webkit-input-placeholder {
+        color: @color-swatch1;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+        color: @color-swatch1;  
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+        color: @color-swatch1;  
+    }
+
+    &:-ms-input-placeholder {  
+        color: @color-swatch1;  
+    }
 }
 
 .widget.profile form input:focus {
