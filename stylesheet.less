@@ -33,6 +33,13 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
     border-bottom: 1px solid@color-swatch2
 }
 
+input {
+    width: 80%;
+    @media @mobile {
+        width: 100%;
+    }
+}
+
 /* ===============================
    HEADER
    =============================== */
@@ -309,6 +316,12 @@ footer.bk-footer p {
     margin-right: 5px
 }
 
+button.btn {
+    &:hover {
+        background-color: @font-swatch7-background-color-hover;
+    }
+}
+
 /* ===============================
    CONTENT
    =============================== */
@@ -351,7 +364,7 @@ footer.bk-footer p {
 
 .widget.button button,
 .widget.paypalbuynow .widget.button.paypal,
-.widget.dropbox button {
+.widget.dropbox button, {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -880,7 +893,7 @@ footer.bk-footer .footer2 .widget.profile form {
    =============================== */
 
 .widget.map {
-
+    margin: 15px 0;
 }
 
 /* ===============================
@@ -913,7 +926,7 @@ footer.bk-footer .footer2 .widget.profile form {
     border-radius: 3px;
     padding-left: 10px;
     @media @mobile {
-        width: 73%;
+        width: 100%%;
     }
 }
 
@@ -933,6 +946,9 @@ footer.bk-footer .footer2 .widget.profile form {
     box-shadow: 0 4px darken(@color-swatch3,15%);
     text-decoration: none;
     text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+    @media @mobile {
+        margin-left: 0;
+    }
 }
 
 .widget.signupform button:hover {
@@ -1126,7 +1142,7 @@ footer.bk-footer .footer2 .widget.profile form {
             letter-spacing: @font-swatch4-letter-spacing;
         }
         input {
-            width: 60%;
+            width: 80%;
             height: 52px;
             margin-bottom: 10px;
             background-color: lighten(@color-swatch5,45%);
@@ -1135,6 +1151,9 @@ footer.bk-footer .footer2 .widget.profile form {
             -moz-border-radius: 3px;
             border-radius: 3px;
             padding-left: 10px;
+            @media @mobile {
+                width: 100%;
+            }
         }
         button {
             position: relative;
@@ -1158,6 +1177,9 @@ footer.bk-footer .footer2 .widget.profile form {
             &:hover {
                 background-color: @font-swatch7-background-color-hover;
                 cursor: pointer;
+            }
+            @media @mobile {
+                margin-left: 0;
             }
         }
     }
@@ -1336,6 +1358,9 @@ footer.bk-footer .footer2 .widget.profile form {
               text-align: left;
             }
           }
+          input {
+            height: 42px;
+          }
           select {
             -moz-appearance: none;
             text-indent: 0.01px;
@@ -1389,6 +1414,9 @@ footer.bk-footer .footer2 .widget.profile form {
             box-shadow: 0 4px darken(@color-swatch3,15%);
             text-decoration: none;
             text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+            &:hover {
+                background-color: @font-swatch7-background-color-hover;
+            }
           }
 
         }
@@ -1471,6 +1499,9 @@ footer.bk-footer .footer2 .widget.profile form {
     box-shadow: 0 4px darken(@color-swatch3,15%);
     text-decoration: none;
     text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+    &:hover {
+        background-color: @font-swatch7-background-color-hover;
+    }
 }
 
 // Basket Summary
