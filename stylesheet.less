@@ -536,21 +536,24 @@ hr.line.align-right {
 }
 
 /* ===============================
-   CONTACT FORM
+   CONTACT/FONECTA FORM
    =============================== */
 
-.widget.contactform form {
+.widget.contactform form,
+.fonectacontactform form {
     display: block;
     padding: 20px 0 0;
     margin-bottom: 20px;
 }
 
-.widget.contactform fieldset {
+.widget.contactform fieldset,
+.fonectacontactform fieldset {
     border: none;
     padding: 0;
 }
 
-.widget.contactform fieldset label {
+.widget.contactform fieldset label,
+.fonectacontactform label {
     width: 100%;
     float: left;
     font-family: @font-swatch4-font-family;
@@ -561,7 +564,8 @@ hr.line.align-right {
     letter-spacing: @font-swatch4-letter-spacing;
 }
 
-.widget.contactform fieldset input {
+.widget.contactform fieldset input,
+.fonectacontactform input {
     height: 50px;
     width: 100%;
     background-color: lighten(@color-swatch5,45%);
@@ -577,7 +581,8 @@ hr.line.align-right {
     padding-left: 10px;
 }
 
-.widget.contactform fieldset textarea {
+.widget.contactform fieldset textarea,
+.fonectacontactform textarea {
     height: 100px;
     width: 100%;
     background-color: lighten(@color-swatch5,45%);
@@ -595,7 +600,8 @@ hr.line.align-right {
     resize: none;
 }
 
-.widget.contactform fieldset button.btn {
+.widget.contactform fieldset button.btn,
+.fonectacontactform button.btn {
     display: block;
     padding: 6px 8px;
     margin: 0;
@@ -616,9 +622,26 @@ hr.line.align-right {
     color: @font-swatch7-color;
 }
 
-.widget.contactform fieldset button.btn:hover {
+.widget.contactform fieldset button.btn:hover,
+.fonectacontactform button.btn:hover {
     background-color: @font-swatch7-background-color-hover;
     cursor: pointer;
+}
+
+
+// Fonecta Only Styles
+input[type="checkbox"] {
+    display: inline;
+    width: auto;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.fonectacontactform fieldset label {
+    width: auto;
+    float: none;
 }
 
 /* ===============================
