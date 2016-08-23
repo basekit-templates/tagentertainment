@@ -1,7 +1,7 @@
 {
     "name":"Tag Entertainment",
     "thumbnail":"tagentertainment.png",
-    "screenshot":"tagentertainment.png",
+    "screenshot":"tagentertainment-screenshot.jpg",
     "templateType":"standard",
     "pageTypes":["home"],
     "tags": {
