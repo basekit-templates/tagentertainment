@@ -4,6 +4,7 @@
     "screenshot":"tagentertainment-screenshot.jpg",
     "templateType":"standard",
     "pageTypes":["home"],
+    "versionTenCompatible": 1,
     "tags": {
         "en": ["Professional", "clean", "Business", "modern", "company", "business", "corporate", "finance", "financial", "firm", "money", "open", "simple"],
         "es": ["Profesional", "limpio", "Corporativo", "moderno", "empresa", "negocios", "corporativo", "finanzas", "financiero", "firma", "dinero", "abierto", "simple"],
