@@ -330,7 +330,6 @@ button.btn {
 
 .widget.content {
     padding: 0;
-    overflow: hidden;
 }
 
 .widget.content span.expand {
@@ -1117,6 +1116,7 @@ footer.bk-footer .footer2 .widget.profile form {
 
 .widget {
     &.blogpostlist {
+        padding-top: 1px;
         .blog-post-item {
             padding: 30px;
             background-color: lighten(@color-swatch5,45%);
@@ -1494,6 +1494,7 @@ footer.bk-footer .footer2 .widget.profile form {
 }
 
 .ecom-productslist-products {
+    .clearfix;
     .btn {
         display: inline-block;
         color: @font-swatch7-color;
@@ -2111,3 +2112,6 @@ footer.bk-footer .footer2 .widget.profile form {
         margin: 0 auto;
     }
 }
+
+
+@import "@{templateLocal}/migration.less";
